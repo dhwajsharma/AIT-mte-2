@@ -1,5 +1,3 @@
-console.log("Ajax tutorial in one video");
-
 let fetchBtn = document.getElementById("fetchBtn");
 fetchBtn.addEventListener("click", buttonClickHandler);
 

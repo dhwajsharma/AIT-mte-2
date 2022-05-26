@@ -16,7 +16,7 @@ $name = $email = $mobileno = $gender = $website = $agree = "";
 if ($_SERVER["REQUEST_METHOD"] == "POST") {  
       
 //String Validation  
-    if (emptyempty($_POST["name"])) {  
+    if (empty($_POST["name"])) {  
          $nameErr = "Name is required";  
     } else {  
         $name = input_data($_POST["name"]);  
@@ -27,7 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }  
       
     //Email Validation   
-    if (emptyempty($_POST["email"])) {  
+    if (empty($_POST["email"])) {  
             $emailErr = "Email is required";  
     } else {  
             $email = input_data($_POST["email"]);  
@@ -38,7 +38,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
      }  
     
     //Number Validation  
-    if (emptyempty($_POST["mobileno"])) {  
+    if (empty($_POST["mobileno"])) {  
             $mobilenoErr = "Mobile no is required";  
     } else {  
             $mobileno = input_data($_POST["mobileno"]);  
@@ -53,7 +53,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }  
       
     //URL Validation      
-    if (emptyempty($_POST["website"])) {  
+    if (empty($_POST["website"])) {  
         $website = "";  
     } else {  
             $website = input_data($_POST["website"]);  
@@ -64,7 +64,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }  
       
     //Empty Field Validation  
-    if (emptyempty ($_POST["gender"])) {  
+    if (empty ($_POST["gender"])) {  
             $genderErr = "Gender is required";  
     } else {  
             $gender = input_data($_POST["gender"]);  
